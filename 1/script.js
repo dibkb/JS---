@@ -8,13 +8,13 @@ function hello() {
 }
 // closure;
 function outer() {
-  const x = 7;
+  var x = 7;
   return function inner() {
     console.log(x);
   };
 }
 const f = outer();
 // console.log(f);
-const x = 9;
+// var x = 9;
 console.log(x);
 f();
